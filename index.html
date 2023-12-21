@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>vocational high school</title>
+  </head>
+  <body>
+    <nav>
+      <img src="assets/logo.PNG" alt="logo" class="logo" /><!--untuk logo-->
+      <ul class="hidden" id="navbar">
+        <a href="#" class="nav-item home" id="home">home</a>
+        <a href="#our-profile" class="nav-item" id="ourprofile">our profile</a>
+        <a href="#vision" class="nav-item" id="visionmision">vision</a>
+        <a href="#message-us" class="nav-item message" id="message">message us</a>
+      </ul>
+      <img src="" alt="" class="hero-menu" id="hero-menu" /><!--hero-->
+    </nav>
+
+    <header>
+      <h1>Hi <span id="halo-nama"></span>,Welcome To Our Website</h1>
+      <h4>School For Bright Future</h4>
+      <img src="assets/school.jpg" alt="" class="school-building" />
+    </header>
+
+    <!--our profile-->
+
+    <section class="our-profile" id="our-profile">
+      <h2>Our Profile</h2>
+      <div class="list-profile">
+        <div class="profile">
+          <img src="assets/kantin.png" alt="" /><!--kantin-->
+          <p>canteen</p>
+        </div>
+
+        <div class="profile">
+          <img src="assets/field.jpg" alt="" /><!--lapangan-->
+          <p>field</p>
+        </div>
+
+        <div class="profile">
+          <img src="assets/lab.jpg" alt="" /><!--kelas-->
+          <p>classroom</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="vision">
+      <div class="visimisi">
+        <img src="assets/vision mision.PNG" alt="vision" class="vision" />
+        <div class="text">
+          <h3></h3>
+        </div>
+      </div>
+    </section>
+
+    <!--message-us-->
+
+    <section class="message" id="message-us">
+      <h2>Message Us</h2>
+      <div class="message-us">
+        <form name="message-form" onsubmit="return validateForm()">
+          <table>
+            <tr>
+              <td class="col-1"><p>Nama</p></td>
+              <td class="col-2"><p>:</p></td>
+              <td class="col-3">
+                <input id="name" type="text" placeholder="nama" name="nama" required />
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1"><p>Tanggal Lahir</p></td>
+              <td class="col-2"><p>:</p></td>
+              <td class="col-3">
+                <input type="date" name="Tanggal" id="date" required />
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1"><p>Jenis Kelamin</p></td>
+              <td class="col-1"><p>:</p></td>
+              <td class="col-1">
+                <input type="radio" name="gender" id="kelamin" value="laki-laki" class="jenis-kelamin" required />
+                <p>laki-laki</p>
+                <input type="radio" name="gender" id="kelamin" value="perempuan" class="jenis-kelamin" required />
+                <p>perempuan</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1" style="vertical-align: top">pesan</td>
+              <td class="col-2" style="vertical-align: top">:</td>
+              <td class="col-3">
+                <textarea name="message-form" id="pesan" cols="46" rows="10" required> </textarea>
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="submit" class="submit-btn" id="submit-btn" />
+        </form>
+        <div class="return" id="return">
+          <div class="returntext" id="returntext">
+            <p class="point">Current Time : <span id="time-api"></span></p>
+            <br />
+            <p class="point">Nama : <span id="sender-name"></span></p>
+            <p class="point">Tanggal Lahir : <span id="sender-birth-date"></span></p>
+            <p class="point">Jenis Kelamin : <span id="sender-gender"></span></p>
+            <p class="point">Pesan : <span id="sender-message"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>created by hakuuu.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
